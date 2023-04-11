@@ -1,0 +1,11 @@
+jupyterlab
+matplotlib
+
+
+selenium == 3.141.0
+chromedriver-binary == 107.0.5304.18
+Django==4.0.1
+django-environ==0.8.1
+
+pandas
+numpy

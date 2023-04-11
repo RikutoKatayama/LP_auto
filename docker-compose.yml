@@ -1,0 +1,19 @@
+version: '3'
+services:
+  python3:
+    restart: always
+    build: .
+    container_name: 'python3'
+    working_dir: '/root/'
+    tty: true
+    volumes:
+      - ./mysite:/root/mysite
+  
+  selenium:
+    image: selenium/standalone-chrome-debug:3.2.0-actinium
+    ports:
+      - 4444:4444
+      - 5900:5900
+    shm_size: "2g"
+      
+      
